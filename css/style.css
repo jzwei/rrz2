@@ -241,10 +241,28 @@ input:checked ~ .menu-content {
     background-position: 31% 100%;
     background-size: 158%;
   }
-}
+} */
 @media only screen and (max-width: 450px) {
   .indexnamebackground {
     background-position: 31% 0%;
     background-size: 130%;
   }
-} */
+
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-outline {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .form-outline {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .form-control {
+    width: 95%;
+  }
+  .footersection {
+    padding: 0px;
+  }
+}
