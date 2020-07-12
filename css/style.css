@@ -49,6 +49,13 @@ main {
   color: #3a3a3a;
   text-shadow: 2px 2px #fbfdf9;
 }
+
+.sub-heading {
+  font-size: 0.5em;
+  color: grey;
+  text-shadow: 2px 2px #fbfdf9;
+}
+
 .content {
   /* background: #129a22; */
 }
@@ -178,6 +185,16 @@ input:checked ~ .menu-content {
 }
 
 /* IMAGE GALLERY END */
+
+/* CONTACT BEGIN */
+
+.contact-container {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.form-group {
+}
+/* CONTACT END */
 
 @media screen and (min-width: 640px) {
   .flex-container {

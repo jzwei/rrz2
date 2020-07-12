@@ -29,14 +29,17 @@
       <!-- Main -->
       <!-- Header -->
       <header id="header" class="header indexnamebackground">
-        <div class="indexname">RRZ Ceramics</div>
+        <div class="indexname">
+          RRZ Ceramics<br />
+          <span class="sub-heading">and Paintings</span>
+        </div>
         <!-- <p class="header-line">person who makes things</p> -->
       </header>
 
       <!-- Hero -->
       <section class="hero">
         <p>
-          Ceramic artist based in St. Petersburg, FL.
+          Ceramic and surface artist based in St. Petersburg, FL.
         </p>
       </section>
 
@@ -169,7 +172,111 @@
       <!-- Footer -->
       <footer class="footer">
         <div class="indexcontent">
-          <div class="footersection footerbackground"></div>
+          <div class="footersection footerbackground">
+            <!-- CONTACT FORM BELOW-->
+
+            <div class="contact-container container-width">
+              <div class="form-outline">
+                <form
+                  role="form"
+                  name="gform"
+                  id="gform"
+                  enctype="text/plain"
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSek0LdHJFcAa_UZIrX-_RfIKgUFKhHEHfvsRdwflOk8722RTQ/formResponse?embedded=true"
+                  target="hidden_iframe"
+                  onsubmit="submitted=true;"
+                >
+                  <h2 class="">
+                    Contact!
+                  </h2>
+
+                  <div class="form-group">
+                    <label for="name" class="control-label">Name</label>
+                    <div class="">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="entry.800368956"
+                        name="entry.800368956"
+                        placeholder="First & Last Name"
+                        value=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" class="control-label">Email</label>
+                    <div class="">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="entry.1310400355"
+                        name="entry.1310400355"
+                        placeholder="example@email.com"
+                        value=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="subject" class="control-label">Subject</label>
+                    <div class="">
+                      <input
+                        type="subject"
+                        class="form-control"
+                        id="entry.1018992126"
+                        name="entry.1018992126"
+                        placeholder="Subject"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="control-label">Message</label>
+                    <div class="">
+                      <textarea
+                        class="form-control"
+                        rows="6"
+                        id="entry.775340234"
+                        name="entry.775340234"
+                        placeholder="Message..."
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div">
+                    <input
+                      id="submit"
+                      name="submit"
+                      type="submit"
+                      value="Send!"
+                      class="btn btn-primary send-btn btn-color"
+                    />
+                  </div>
+
+                  <iframe
+                    name="hidden_iframe"
+                    id="hidden_iframe"
+                    style="display: none;"
+                    onload="if(submitted) {}"
+                  ></iframe>
+                  <div>
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      var submitted = false;
+                    </script>
+                    <script type="text/javascript">
+                      $("#gform").on("submit", function (e) {
+                        $("#gform *").fadeOut(2000);
+                        $("#gform").prepend("Message Submitted!");
+                      });
+                    </script>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- CONTACT FORM ENDS -->
+          </div>
         </div>
       </footer>
     </main>
