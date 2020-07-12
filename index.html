@@ -175,7 +175,7 @@
           <div class="footersection footerbackground">
             <!-- CONTACT FORM BELOW-->
 
-            <div class="contact-container container-width">
+            <div class="contact-container">
               <div class="form-outline">
                 <form
                   role="form"
@@ -240,37 +240,39 @@
                         id="entry.775340234"
                         name="entry.775340234"
                         placeholder="Message..."
-                      ></textarea>
+                      >
+                      </textarea>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div">
-                    <input
-                      id="submit"
-                      name="submit"
-                      type="submit"
-                      value="Send!"
-                      class="btn btn-primary send-btn btn-color"
-                    />
-                  </div>
-
-                  <iframe
-                    name="hidden_iframe"
-                    id="hidden_iframe"
-                    style="display: none;"
-                    onload="if(submitted) {}"
-                  ></iframe>
-                  <div>
-                    <script src="assets/js/jquery.min.js"></script>
-                    <script type="text/javascript">
-                      var submitted = false;
-                    </script>
-                    <script type="text/javascript">
-                      $("#gform").on("submit", function (e) {
-                        $("#gform *").fadeOut(2000);
-                        $("#gform").prepend("Message Submitted!");
-                      });
-                    </script>
+                    <div>
+                      <input
+                        id="submit"
+                        name="submit"
+                        type="submit"
+                        value="Send!"
+                        class="btn btn-primary send-btn btn-color"
+                      />
+                    </div>
+                    <iframe
+                      name="hidden_iframe"
+                      id="hidden_iframe"
+                      style="display: none;"
+                      onload="if(submitted) {}"
+                    >
+                    </iframe>
+                    <div>
+                      <script src="assets/js/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        var submitted = false;
+                      </script>
+                      <script type="text/javascript">
+                        $("#gform").on("submit", function (e) {
+                          $("#gform *").fadeOut(2000);
+                          $("#gform").prepend("Message Submitted!");
+                        });
+                      </script>
+                    </div>
                   </div>
                 </form>
               </div>
