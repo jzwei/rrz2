@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "ColoredCrayons";
+  src: url("fonts/ColoredCrayons.ttf");
+}
+
+main,
+header,
+section,
+aside,
+footer {
+  margin: 0;
+  padding: 20px;
+  /* border: 1px solid #000000; */
+  font-family: "ColoredCrayons";
+  background-color: white;
+  color: #5a5552;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 75rem;
+}
+
+main {
+  /* background: #000000; */
+}
+
+.header {
+  /* background: #03a9f4; */
+}
+.header-line {
+  font-style: italic;
+  color: grey;
+}
+.hero {
+  /* background: #d22b1f; */
+}
+.indexnamebackground {
+  background-image: url("../images/art/bowl.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 2% 72%;
+  background-size: 128%;
+}
+.indexname {
+  text-align: left;
+  font-size: 5em;
+  padding: 120px 4%;
+  color: #3a3a3a;
+  text-shadow: 2px 2px #fbfdf9;
+}
+.content {
+  /* background: #129a22; */
+}
+
+.sidebar {
+  /* border: 1px solid #000000; */
+  /* background: #673ab7; */
+}
+
+.footer {
+  /* border: 1px solid #000000; */
+  /* background: #616161; */
+}
+
+/* MENU START */
+.menu-content {
+  /* font-family: "Oswald", sans-serif; */
+  padding: 0 0 0 10px;
+  /* background-color: red; */
+}
+.collapsible-menu {
+  /* color: black; */
+  /* background-color: rgb(255, 255, 255); */
+  /* padding: 0px 30px; */
+  /* border-bottom: 3px solid #cde700; */
+  /* box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); */
+  /* background-color: blue; */
+}
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+  /* background-color: pink; */
+}
+.collapsible-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  /* background-color: purple; */
+}
+.collapsible-menu label {
+  /* font-family: "Sedgwick Ave Display", cursive; */
+  /* font-size: 56px; */
+  display: block;
+  cursor: pointer;
+  /* background: url(../images/navigation/hamburger.svg) no-repeat left center; */
+  padding: 10px 0 10px 0px;
+  /* background-color: green; */
+  /* max-width: 0px; */
+}
+input#work,
+#contact,
+#about {
+  display: none;
+}
+input#work,
+#contact,
+#about {
+  display: none;
+}
+input#work,
+#contact,
+#about {
+  display: none;
+}
+input:checked + label {
+  /* background-image: url(../images/navigation/x.svg); */
+  /* max-width: 0px; */
+}
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  /* font-family: "Oswald", sans-serif; */
+  padding: 0 0 0 10px;
+  /* background-color: yellow; */
+}
+/* Toggle Effect */
+input:checked ~ label {
+  /* background-image: url(../images/navigation/x.svg); */
+  /* max-width: 0px; */
+}
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+/* MENU END */
+
+/* IMAGE GALLERY START */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 32%;
+  max-width: 32.4%%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.footerbackground {
+  background-image: url("../images/art/figure.jpg");
+  padding: 120px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 74% 70%;
+  background-size: 128%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* IMAGE GALLERY END */
+
+@media screen and (min-width: 640px) {
+  .flex-container {
+    display: flex;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .sidebar {
+    flex: 0 1 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .indexname {
+    max-width: 200px;
+    padding: 68px 4%;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {
+  .indexnamebackground {
+    background-position: 31% 100%;
+    background-size: 158%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .indexnamebackground {
+    background-position: 31% 0%;
+    background-size: 130%;
+  }
+} */
