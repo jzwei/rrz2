@@ -200,7 +200,13 @@ input:checked ~ .menu-content {
   grid-column-start: 2;
   grid-column-end: 4;
 }
-
+.form-control {
+  width: 100%;
+  padding: 5px;
+}
+.form-group {
+  margin: 10px;
+}
 /* CONTACT END */
 
 @media screen and (min-width: 640px) {
